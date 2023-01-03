@@ -1,0 +1,977 @@
+﻿Log file open, 12/21/16 18:34:41
+LogInit:Display: Running engine for game: Hopp
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(469761371) SRandInit(469761373).
+LogTaskGraph: Started task graph with 4 named threads and 7 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.070961
+LogInit: Version: 4.12.5-3039270+++UE4+Release-4.12
+LogInit: API Version: 2992821
+LogInit: Net Version: 3039270
+LogDevObjectVersion: Number of dev versions registered: 13
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 3
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 1
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 2
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 6
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 2
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 0
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogInit: Compiled (64-bit): Jul  6 2016 09:09:46
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.12
+LogInit: Command line: -EpicPortal 
+LogInit: Base directory: C:/Program Files (x86)/Epic Games/4.12/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Using libcurl 7.41.0
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with WinSSL
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2016.12.21-23.34.41:221][  0]LogInit: Selected Device Profile: [Windows]
+[2016.12.21-23.34.41:221][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.12.21-23.34.41:231][  0]LogInit: Computer: ANDREW
+[2016.12.21-23.34.41:231][  0]LogInit: User: mrchargerlover
+[2016.12.21-23.34.41:231][  0]LogInit: CPU Page size=65536, Cores=4
+[2016.12.21-23.34.41:231][  0]LogInit: High frequency timer resolution =3.323584 MHz
+[2016.12.21-23.34.41:232][  0]LogMemory: Memory total: Physical=32.0GB (32GB approx)
+[2016.12.21-23.34.41:232][  0]LogMemory: Platform Memory Stats for Windows
+[2016.12.21-23.34.41:232][  0]LogMemory: Process Physical Memory: 190.47 MB used, 190.47 MB peak
+[2016.12.21-23.34.41:232][  0]LogMemory: Process Virtual Memory: 195.26 MB used, 195.26 MB peak
+[2016.12.21-23.34.41:232][  0]LogMemory: Physical Memory: 10583.36 MB used, 32726.30 MB total
+[2016.12.21-23.34.41:232][  0]LogMemory: Virtual Memory: 552.97 MB used, 134217728.00 MB total
+[2016.12.21-23.34.41:258][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2016.12.21-23.34.41:632][  0]LogD3D11RHI: D3D11 adapters:
+[2016.12.21-23.34.41:659][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 660' (Feature Level 11_0)
+[2016.12.21-23.34.41:659][  0]LogD3D11RHI:       2016/0/16363 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:3, VendorId:0x10de
+[2016.12.21-23.34.41:661][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2016.12.21-23.34.41:661][  0]LogD3D11RHI:       0/0/16363 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2016.12.21-23.34.41:661][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2016.12.21-23.34.41:666][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2016.12.21-23.34.41:666][  0]LogD3D11RHI:     GPU DeviceId: 0x11c0 (for the marketing name, search the web for "GPU Device Id")
+[2016.12.21-23.34.41:666][  0]LogWindows: EnumDisplayDevices:
+[2016.12.21-23.34.41:666][  0]LogWindows:    0. 'NVIDIA GeForce GTX 660' (P:1 D:1)
+[2016.12.21-23.34.41:666][  0]LogWindows:    1. 'NVIDIA GeForce GTX 660' (P:0 D:1)
+[2016.12.21-23.34.41:666][  0]LogWindows:    2. 'NVIDIA GeForce GTX 660' (P:0 D:1)
+[2016.12.21-23.34.41:666][  0]LogWindows:    3. 'NVIDIA GeForce GTX 660' (P:0 D:0)
+[2016.12.21-23.34.41:666][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2016.12.21-23.34.41:666][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 660
+[2016.12.21-23.34.41:666][  0]LogD3D11RHI:   Driver Version: 369.09 (internal:21.21.13.6909, unified:369.09)
+[2016.12.21-23.34.41:666][  0]LogD3D11RHI:      Driver Date: 8-1-2016
+[2016.12.21-23.34.41:666][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.12.21-23.34.41:686][  0]LogD3D11RHI: Async texture creation enabled
+[2016.12.21-23.34.41:702][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2016.12.21-23.34.41:702][  0]LogShaderCompilers: Guid format shader working directory is -21 characters bigger than the processId version (../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Intermediate/Shaders/WorkingDirectory/13208/).
+[2016.12.21-23.34.41:702][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/MRCHAR~1/AppData/Local/Temp/UnrealShaderWorkingDir/901CC5384A01B204A86838B43D906C39/'.
+[2016.12.21-23.34.41:702][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.12.21-23.34.42:579][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.12.21-23.34.42:588][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.12.21-23.34.42:597][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.12.21-23.34.42:607][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.12.21-23.34.42:616][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.12.21-23.34.42:624][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.12.21-23.34.42:632][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.12.21-23.34.42:639][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.12.21-23.34.42:647][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.12.21-23.34.42:654][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.12.21-23.34.42:662][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.12.21-23.34.42:678][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.12.21-23.34.42:678][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.12.21-23.34.42:679][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.12.21-23.34.42:699][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.12.21-23.34.42:707][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2016.12.21-23.34.42:714][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.12.21-23.34.42:724][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.12.21-23.34.42:733][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.12.21-23.34.42:733][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.12.21-23.34.42:798][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.12.21-23.34.42:846][  0]LogDerivedDataCache: Loaded boot cache 0.05s 48MB C:/Users/mrchargerlover/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2016.12.21-23.34.42:846][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/mrchargerlover/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc
+[2016.12.21-23.34.42:846][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.12.21-23.34.42:846][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.12.21-23.34.42:846][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.12.21-23.34.42:846][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.12.21-23.34.42:862][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.12.21-23.34.42:873][  0]LogDerivedDataCache: Using Local data cache path C:/Users/mrchargerlover/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.12.21-23.34.43:061][  0]LogInit: Selected Device Profile: [Windows]
+[2016.12.21-23.34.43:062][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2016.12.21-23.34.43:209][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.12.21-23.34.43:209][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.12.21-23.34.43:209][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2016.12.21-23.34.43:445][  0]LogAssetRegistry: FAssetRegistry took 0.0210 seconds to start up
+[2016.12.21-23.34.43:473][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.025089 seconds
+[2016.12.21-23.34.43:478][  0]LogUObjectArray: 28739 objects as part of root set at end of initial load.
+[2016.12.21-23.34.43:478][  0]LogUObjectAllocator: 5855624 out of 0 bytes used by permanent object pool.
+[2016.12.21-23.34.43:478][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2016.12.21-23.34.43:484][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.12.21-23.34.43:640][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.12.21-23.34.43:640][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.12.21-23.34.44:263][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.12.21-23.34.44:459][  0]SourceControl: Info Source control is disabled
+[2016.12.21-23.34.44:460][  0]SourceControl: Info Source control is disabled
+[2016.12.21-23.34.44:467][  0]SourceControl: Info Source control is disabled
+[2016.12.21-23.34.44:475][  0]SourceControl: Info Source control is disabled
+[2016.12.21-23.34.44:658][  0]LogEngine: Initializing Engine...
+[2016.12.21-23.34.44:666][  0]LogHMD: SteamVR failed to initialize.  Err: 108
+[2016.12.21-23.34.44:673][  0]LogHMD: SteamVR failed to initialize.  Err: 108
+[2016.12.21-23.34.44:821][  0]LogAIModule: Creating AISystem for world NewWorld
+[2016.12.21-23.34.44:829][  0]LogInit: XAudio2 using 'Middle Man (NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2016.12.21-23.34.44:837][  0]LogInit: FAudioDevice initialized.
+[2016.12.21-23.34.44:862][  0]LogDerivedDataCache: Saved boot cache 0.03s 48MB C:/Users/mrchargerlover/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2016.12.21-23.34.44:870][  0]LogInit: Texture streaming: Enabled
+[2016.12.21-23.34.44:895][  0]LogInit: Transaction tracking system initialized
+[2016.12.21-23.34.44:916][  0]BlueprintLog: New page: Editor Load
+[2016.12.21-23.34.45:561][  0]LocalizationService: Info Localization service is disabled
+[2016.12.21-23.34.45:646][  0]LogConsoleResponse:Display: 
+[2016.12.21-23.34.45:739][  0]LogCook:Display: Max memory allowance for cook 8192mb
+[2016.12.21-23.34.45:739][  0]LogCook:Display: Mobile HDR setting 1
+[2016.12.21-23.34.45:836][  0]LogFileCache: Scanning file cache for directory 'C:/Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/' took 0.01s
+[2016.12.21-23.34.45:836][  0]SourceControl: Info Source control is disabled
+[2016.12.21-23.34.45:837][  0]LogFactory: FactoryCreateFile: PackFactory with PackFactory (0 0 C:/Program Files (x86)/Epic Games/4.12/FeaturePacks/MobileStarterContent.upack)
+[2016.12.21-23.34.45:844][  0]LogPackFactory: Finished extracting 8 files (including 0 errors).
+[2016.12.21-23.34.45:854][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Architecture/Floor_400x400.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Architecture/Floor_400x400.uasset"
+[2016.12.21-23.34.45:862][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Architecture/Pillar_50x500.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Architecture/Pillar_50x500.uasset"
+[2016.12.21-23.34.45:871][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Architecture/Wall_400x200.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Architecture/Wall_400x200.uasset"
+[2016.12.21-23.34.45:879][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Architecture/Wall_400x300.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Architecture/Wall_400x300.uasset"
+[2016.12.21-23.34.45:887][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Architecture/Wall_400x400.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Architecture/Wall_400x400.uasset"
+[2016.12.21-23.34.45:894][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Architecture/Wall_500x500.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Architecture/Wall_500x500.uasset"
+[2016.12.21-23.34.45:903][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Architecture/Wall_Door_400x300.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Architecture/Wall_Door_400x300.uasset"
+[2016.12.21-23.34.45:911][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Architecture/Wall_Door_400x400.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Architecture/Wall_Door_400x400.uasset"
+[2016.12.21-23.34.45:922][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Architecture/Wall_Window_400x300.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Architecture/Wall_Window_400x300.uasset"
+[2016.12.21-23.34.45:931][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Architecture/Wall_Window_400x400.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Architecture/Wall_Window_400x400.uasset"
+[2016.12.21-23.34.45:939][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Audio/Collapse01.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Audio/Collapse01.uasset"
+[2016.12.21-23.34.45:947][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Audio/Collapse02.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Audio/Collapse02.uasset"
+[2016.12.21-23.34.45:951][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Audio/Collapse_Cue.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Audio/Collapse_Cue.uasset"
+[2016.12.21-23.34.45:960][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Audio/Explosion01.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Audio/Explosion01.uasset"
+[2016.12.21-23.34.45:967][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Audio/Explosion02.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Audio/Explosion02.uasset"
+[2016.12.21-23.34.45:971][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Audio/Explosion_Cue.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Audio/Explosion_Cue.uasset"
+[2016.12.21-23.34.45:978][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Audio/Fire01.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Audio/Fire01.uasset"
+[2016.12.21-23.34.45:982][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Audio/Fire01_Cue.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Audio/Fire01_Cue.uasset"
+[2016.12.21-23.34.45:989][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Audio/Fire_Sparks01.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Audio/Fire_Sparks01.uasset"
+[2016.12.21-23.34.45:994][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Audio/Fire_Sparks01_Cue.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Audio/Fire_Sparks01_Cue.uasset"
+[2016.12.21-23.34.46:002][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Audio/Light01.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Audio/Light01.uasset"
+[2016.12.21-23.34.46:006][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Audio/Light01_Cue.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Audio/Light01_Cue.uasset"
+[2016.12.21-23.34.46:014][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Audio/Light02.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Audio/Light02.uasset"
+[2016.12.21-23.34.46:018][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Audio/Light02_Cue.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Audio/Light02_Cue.uasset"
+[2016.12.21-23.34.46:026][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Audio/Smoke01.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Audio/Smoke01.uasset"
+[2016.12.21-23.34.46:029][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Audio/Smoke01_Cue.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Audio/Smoke01_Cue.uasset"
+[2016.12.21-23.34.46:035][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Audio/Starter_Background_Cue.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Audio/Starter_Background_Cue.uasset"
+[2016.12.21-23.34.46:044][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Audio/Starter_Birds01.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Audio/Starter_Birds01.uasset"
+[2016.12.21-23.34.46:056][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Audio/Starter_Music01.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Audio/Starter_Music01.uasset"
+[2016.12.21-23.34.46:057][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Audio/Starter_Music_Cue.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Audio/Starter_Music_Cue.uasset"
+[2016.12.21-23.34.46:065][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Audio/Starter_Wind05.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Audio/Starter_Wind05.uasset"
+[2016.12.21-23.34.46:074][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Audio/Starter_Wind06.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Audio/Starter_Wind06.uasset"
+[2016.12.21-23.34.46:081][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Audio/Steam01.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Audio/Steam01.uasset"
+[2016.12.21-23.34.46:085][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Audio/Steam01_Cue.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Audio/Steam01_Cue.uasset"
+[2016.12.21-23.34.46:093][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Blueprints/Blueprint_CeilingLight.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Blueprints/Blueprint_CeilingLight.uasset"
+[2016.12.21-23.34.46:100][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Blueprints/Blueprint_Effect_Explosion.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Blueprints/Blueprint_Effect_Explosion.uasset"
+[2016.12.21-23.34.46:107][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Blueprints/Blueprint_Effect_Fire.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Blueprints/Blueprint_Effect_Fire.uasset"
+[2016.12.21-23.34.46:114][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Blueprints/Blueprint_Effect_Smoke.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Blueprints/Blueprint_Effect_Smoke.uasset"
+[2016.12.21-23.34.46:120][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Blueprints/Blueprint_Effect_Sparks.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Blueprints/Blueprint_Effect_Sparks.uasset"
+[2016.12.21-23.34.46:128][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Blueprints/Blueprint_WallSconce.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Blueprints/Blueprint_WallSconce.uasset"
+[2016.12.21-23.34.46:140][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Maps/Minimal_Default.umap" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Maps/Minimal_Default.umap"
+[2016.12.21-23.34.46:159][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Maps/StarterMap.umap" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Maps/StarterMap.umap"
+[2016.12.21-23.34.46:166][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Basic_Floor.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Materials/M_Basic_Floor.uasset"
+[2016.12.21-23.34.46:173][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Basic_Wall.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Materials/M_Basic_Wall.uasset"
+[2016.12.21-23.34.46:180][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Brick_Clay_Beveled.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Materials/M_Brick_Clay_Beveled.uasset"
+[2016.12.21-23.34.46:187][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Brick_Clay_New.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Materials/M_Brick_Clay_New.uasset"
+[2016.12.21-23.34.46:194][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Brick_Clay_Old.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Materials/M_Brick_Clay_Old.uasset"
+[2016.12.21-23.34.46:202][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Brick_Cut_Stone.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Materials/M_Brick_Cut_Stone.uasset"
+[2016.12.21-23.34.46:209][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Brick_Hewn_Stone.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Materials/M_Brick_Hewn_Stone.uasset"
+[2016.12.21-23.34.46:215][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Ceramic_Tile_Checker.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Materials/M_Ceramic_Tile_Checker.uasset"
+[2016.12.21-23.34.46:223][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_CobbleStone_Pebble.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Materials/M_CobbleStone_Pebble.uasset"
+[2016.12.21-23.34.46:230][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_CobbleStone_Rough.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Materials/M_CobbleStone_Rough.uasset"
+[2016.12.21-23.34.46:236][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_CobbleStone_Smooth.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Materials/M_CobbleStone_Smooth.uasset"
+[2016.12.21-23.34.46:243][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Concrete_Grime.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Materials/M_Concrete_Grime.uasset"
+[2016.12.21-23.34.46:250][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Concrete_Panels.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Materials/M_Concrete_Panels.uasset"
+[2016.12.21-23.34.46:256][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Concrete_Poured.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Materials/M_Concrete_Poured.uasset"
+[2016.12.21-23.34.46:263][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Concrete_Tiles.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Materials/M_Concrete_Tiles.uasset"
+[2016.12.21-23.34.46:270][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Glass.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Materials/M_Glass.uasset"
+[2016.12.21-23.34.46:277][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Ground_Grass.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Materials/M_Ground_Grass.uasset"
+[2016.12.21-23.34.46:283][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Ground_Gravel.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Materials/M_Ground_Gravel.uasset"
+[2016.12.21-23.34.46:291][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Ground_Moss.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Materials/M_Ground_Moss.uasset"
+[2016.12.21-23.34.46:297][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Metal_Brushed_Nickel.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Materials/M_Metal_Brushed_Nickel.uasset"
+[2016.12.21-23.34.46:304][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Metal_Burnished_Steel.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Materials/M_Metal_Burnished_Steel.uasset"
+[2016.12.21-23.34.46:311][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Metal_Chrome.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Materials/M_Metal_Chrome.uasset"
+[2016.12.21-23.34.46:317][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Metal_Copper.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Materials/M_Metal_Copper.uasset"
+[2016.12.21-23.34.46:324][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Metal_Gold.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Materials/M_Metal_Gold.uasset"
+[2016.12.21-23.34.46:332][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Metal_Rust.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Materials/M_Metal_Rust.uasset"
+[2016.12.21-23.34.46:338][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Metal_Steel.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Materials/M_Metal_Steel.uasset"
+[2016.12.21-23.34.46:345][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Rock_Basalt.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Materials/M_Rock_Basalt.uasset"
+[2016.12.21-23.34.46:352][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Rock_Marble_Polished.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Materials/M_Rock_Marble_Polished.uasset"
+[2016.12.21-23.34.46:358][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Rock_Sandstone.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Materials/M_Rock_Sandstone.uasset"
+[2016.12.21-23.34.46:366][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Rock_Slate.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Materials/M_Rock_Slate.uasset"
+[2016.12.21-23.34.46:373][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Tech_Checker_Dot.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Materials/M_Tech_Checker_Dot.uasset"
+[2016.12.21-23.34.46:380][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Tech_Hex_Tile.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Materials/M_Tech_Hex_Tile.uasset"
+[2016.12.21-23.34.46:387][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Tech_Hex_Tile_Pulse.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Materials/M_Tech_Hex_Tile_Pulse.uasset"
+[2016.12.21-23.34.46:394][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Tech_Panel.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Materials/M_Tech_Panel.uasset"
+[2016.12.21-23.34.46:400][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Water_Lake.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Materials/M_Water_Lake.uasset"
+[2016.12.21-23.34.46:407][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Water_Ocean.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Materials/M_Water_Ocean.uasset"
+[2016.12.21-23.34.46:414][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Wood_Floor_Walnut_Polished.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Materials/M_Wood_Floor_Walnut_Polished.uasset"
+[2016.12.21-23.34.46:421][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Wood_Floor_Walnut_Worn.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Materials/M_Wood_Floor_Walnut_Worn.uasset"
+[2016.12.21-23.34.46:429][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Wood_Oak.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Materials/M_Wood_Oak.uasset"
+[2016.12.21-23.34.46:436][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Wood_Pine.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Materials/M_Wood_Pine.uasset"
+[2016.12.21-23.34.46:443][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Materials/M_Wood_Walnut.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Materials/M_Wood_Walnut.uasset"
+[2016.12.21-23.34.46:450][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Particles/P_Ambient_Dust.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Particles/P_Ambient_Dust.uasset"
+[2016.12.21-23.34.46:457][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Particles/P_Explosion.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Particles/P_Explosion.uasset"
+[2016.12.21-23.34.46:464][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Particles/P_Fire.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Particles/P_Fire.uasset"
+[2016.12.21-23.34.46:471][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Particles/P_Smoke.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Particles/P_Smoke.uasset"
+[2016.12.21-23.34.46:478][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Particles/P_Sparks.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Particles/P_Sparks.uasset"
+[2016.12.21-23.34.46:485][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Particles/Materials/M_Burst.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Particles/Materials/M_Burst.uasset"
+[2016.12.21-23.34.46:492][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Particles/Materials/M_Dust_Particle.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Particles/Materials/M_Dust_Particle.uasset"
+[2016.12.21-23.34.46:499][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Particles/Materials/M_explosion_subUV.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Particles/Materials/M_explosion_subUV.uasset"
+[2016.12.21-23.34.46:505][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Particles/Materials/M_Fire_SubUV.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Particles/Materials/M_Fire_SubUV.uasset"
+[2016.12.21-23.34.46:512][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Particles/Materials/m_flare_01.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Particles/Materials/m_flare_01.uasset"
+[2016.12.21-23.34.46:520][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Particles/Materials/M_Radial_Gradient.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Particles/Materials/M_Radial_Gradient.uasset"
+[2016.12.21-23.34.46:529][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Particles/Materials/M_radial_ramp.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Particles/Materials/M_radial_ramp.uasset"
+[2016.12.21-23.34.46:535][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Particles/Materials/M_smoke_subUV.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Particles/Materials/M_smoke_subUV.uasset"
+[2016.12.21-23.34.46:542][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Particles/Materials/M_Spark.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Particles/Materials/M_Spark.uasset"
+[2016.12.21-23.34.46:549][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/MaterialSphere.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Props/MaterialSphere.uasset"
+[2016.12.21-23.34.46:557][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/SM_Bush.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Props/SM_Bush.uasset"
+[2016.12.21-23.34.46:564][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/SM_Chair.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Props/SM_Chair.uasset"
+[2016.12.21-23.34.46:571][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/SM_CornerFrame.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Props/SM_CornerFrame.uasset"
+[2016.12.21-23.34.46:579][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/SM_Couch.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Props/SM_Couch.uasset"
+[2016.12.21-23.34.46:586][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/SM_Door.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Props/SM_Door.uasset"
+[2016.12.21-23.34.46:593][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/SM_DoorFrame.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Props/SM_DoorFrame.uasset"
+[2016.12.21-23.34.46:600][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/SM_GlassWindow.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Props/SM_GlassWindow.uasset"
+[2016.12.21-23.34.46:607][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/SM_Lamp_Ceiling.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Props/SM_Lamp_Ceiling.uasset"
+[2016.12.21-23.34.46:613][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/SM_Lamp_Wall.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Props/SM_Lamp_Wall.uasset"
+[2016.12.21-23.34.46:622][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/SM_MatPreviewMesh_02.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Props/SM_MatPreviewMesh_02.uasset"
+[2016.12.21-23.34.46:629][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/SM_PillarFrame.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Props/SM_PillarFrame.uasset"
+[2016.12.21-23.34.46:635][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/SM_PillarFrame300.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Props/SM_PillarFrame300.uasset"
+[2016.12.21-23.34.46:642][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/SM_Rock.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Props/SM_Rock.uasset"
+[2016.12.21-23.34.46:649][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/SM_Shelf.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Props/SM_Shelf.uasset"
+[2016.12.21-23.34.46:656][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/SM_Stairs.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Props/SM_Stairs.uasset"
+[2016.12.21-23.34.46:662][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/SM_Statue.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Props/SM_Statue.uasset"
+[2016.12.21-23.34.46:669][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/SM_TableRound.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Props/SM_TableRound.uasset"
+[2016.12.21-23.34.46:676][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/SM_WindowFrame.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Props/SM_WindowFrame.uasset"
+[2016.12.21-23.34.46:684][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/Materials/M_Bush.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Props/Materials/M_Bush.uasset"
+[2016.12.21-23.34.46:692][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/Materials/M_Chair.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Props/Materials/M_Chair.uasset"
+[2016.12.21-23.34.46:698][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/Materials/M_Door.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Props/Materials/M_Door.uasset"
+[2016.12.21-23.34.46:704][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/Materials/M_Frame.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Props/Materials/M_Frame.uasset"
+[2016.12.21-23.34.46:712][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/Materials/M_Lamp.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Props/Materials/M_Lamp.uasset"
+[2016.12.21-23.34.46:718][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/Materials/M_MaterialSphere.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Props/Materials/M_MaterialSphere.uasset"
+[2016.12.21-23.34.46:726][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/Materials/M_MaterialSphere_Plain.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Props/Materials/M_MaterialSphere_Plain.uasset"
+[2016.12.21-23.34.46:733][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/Materials/M_Rock.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Props/Materials/M_Rock.uasset"
+[2016.12.21-23.34.46:739][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/Materials/M_Shelf.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Props/Materials/M_Shelf.uasset"
+[2016.12.21-23.34.46:746][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/Materials/M_Statue.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Props/Materials/M_Statue.uasset"
+[2016.12.21-23.34.46:752][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/Materials/M_StatueGlass.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Props/Materials/M_StatueGlass.uasset"
+[2016.12.21-23.34.46:759][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Props/Materials/M_TableRound.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Props/Materials/M_TableRound.uasset"
+[2016.12.21-23.34.46:766][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Shapes/Shape_Cone.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Shapes/Shape_Cone.uasset"
+[2016.12.21-23.34.46:773][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Shapes/Shape_Cube.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Shapes/Shape_Cube.uasset"
+[2016.12.21-23.34.46:780][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Shapes/Shape_Cylinder.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Shapes/Shape_Cylinder.uasset"
+[2016.12.21-23.34.46:786][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Shapes/Shape_NarrowCapsule.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Shapes/Shape_NarrowCapsule.uasset"
+[2016.12.21-23.34.46:793][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Shapes/Shape_Pipe.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Shapes/Shape_Pipe.uasset"
+[2016.12.21-23.34.46:800][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Shapes/Shape_Pipe_180.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Shapes/Shape_Pipe_180.uasset"
+[2016.12.21-23.34.46:808][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Shapes/Shape_Pipe_90.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Shapes/Shape_Pipe_90.uasset"
+[2016.12.21-23.34.46:814][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Shapes/Shape_Plane.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Shapes/Shape_Plane.uasset"
+[2016.12.21-23.34.46:822][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Shapes/Shape_QuadPyramid.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Shapes/Shape_QuadPyramid.uasset"
+[2016.12.21-23.34.46:829][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Shapes/Shape_Sphere.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Shapes/Shape_Sphere.uasset"
+[2016.12.21-23.34.46:836][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Shapes/Shape_Torus.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Shapes/Shape_Torus.uasset"
+[2016.12.21-23.34.46:843][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Shapes/Shape_Trim.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Shapes/Shape_Trim.uasset"
+[2016.12.21-23.34.46:850][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Shapes/Shape_Trim_90_In.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Shapes/Shape_Trim_90_In.uasset"
+[2016.12.21-23.34.46:857][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Shapes/Shape_Trim_90_Out.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Shapes/Shape_Trim_90_Out.uasset"
+[2016.12.21-23.34.46:864][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Shapes/Shape_TriPyramid.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Shapes/Shape_TriPyramid.uasset"
+[2016.12.21-23.34.46:871][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Shapes/Shape_Tube.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Shapes/Shape_Tube.uasset"
+[2016.12.21-23.34.46:878][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Shapes/Shape_Wedge_A.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Shapes/Shape_Wedge_A.uasset"
+[2016.12.21-23.34.46:885][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Shapes/Shape_Wedge_B.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Shapes/Shape_Wedge_B.uasset"
+[2016.12.21-23.34.46:892][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Shapes/Shape_WideCapsule.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Shapes/Shape_WideCapsule.uasset"
+[2016.12.21-23.34.46:901][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Brick_Clay_Beveled_D.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Brick_Clay_Beveled_D.uasset"
+[2016.12.21-23.34.46:911][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Brick_Clay_Beveled_M.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Brick_Clay_Beveled_M.uasset"
+[2016.12.21-23.34.46:921][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Brick_Clay_Beveled_N.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Brick_Clay_Beveled_N.uasset"
+[2016.12.21-23.34.46:930][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Brick_Clay_New_D.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Brick_Clay_New_D.uasset"
+[2016.12.21-23.34.46:939][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Brick_Clay_New_M.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Brick_Clay_New_M.uasset"
+[2016.12.21-23.34.46:948][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Brick_Clay_New_N.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Brick_Clay_New_N.uasset"
+[2016.12.21-23.34.46:957][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Brick_Clay_Old_D.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Brick_Clay_Old_D.uasset"
+[2016.12.21-23.34.46:966][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Brick_Clay_Old_N.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Brick_Clay_Old_N.uasset"
+[2016.12.21-23.34.46:976][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Brick_Cut_Stone_D.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Brick_Cut_Stone_D.uasset"
+[2016.12.21-23.34.46:985][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Brick_Cut_Stone_N.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Brick_Cut_Stone_N.uasset"
+[2016.12.21-23.34.46:993][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Brick_Hewn_Stone_D.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Brick_Hewn_Stone_D.uasset"
+[2016.12.21-23.34.47:002][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Brick_Hewn_Stone_M.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Brick_Hewn_Stone_M.uasset"
+[2016.12.21-23.34.47:010][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Brick_Hewn_Stone_N.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Brick_Hewn_Stone_N.uasset"
+[2016.12.21-23.34.47:017][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Burst_M.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Burst_M.uasset"
+[2016.12.21-23.34.47:025][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Bush_D.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Bush_D.uasset"
+[2016.12.21-23.34.47:032][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Bush_N.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Bush_N.uasset"
+[2016.12.21-23.34.47:039][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Ceramic_Tile_M.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Ceramic_Tile_M.uasset"
+[2016.12.21-23.34.47:046][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Ceramic_Tile_N.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Ceramic_Tile_N.uasset"
+[2016.12.21-23.34.47:054][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Chair_M.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Chair_M.uasset"
+[2016.12.21-23.34.47:061][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Chair_N.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Chair_N.uasset"
+[2016.12.21-23.34.47:068][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Checker_Noise_M.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Checker_Noise_M.uasset"
+[2016.12.21-23.34.47:078][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_CobbleStone_Pebble_D.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_CobbleStone_Pebble_D.uasset"
+[2016.12.21-23.34.47:086][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_CobbleStone_Pebble_M.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_CobbleStone_Pebble_M.uasset"
+[2016.12.21-23.34.47:095][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_CobbleStone_Pebble_N.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_CobbleStone_Pebble_N.uasset"
+[2016.12.21-23.34.47:102][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_CobbleStone_Rough_D.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_CobbleStone_Rough_D.uasset"
+[2016.12.21-23.34.47:110][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_CobbleStone_Rough_N.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_CobbleStone_Rough_N.uasset"
+[2016.12.21-23.34.47:118][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_CobbleStone_Smooth_D.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_CobbleStone_Smooth_D.uasset"
+[2016.12.21-23.34.47:127][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_CobbleStone_Smooth_M.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_CobbleStone_Smooth_M.uasset"
+[2016.12.21-23.34.47:136][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_CobbleStone_Smooth_N.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_CobbleStone_Smooth_N.uasset"
+[2016.12.21-23.34.47:145][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Concrete_Grime_D.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Concrete_Grime_D.uasset"
+[2016.12.21-23.34.47:154][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Concrete_Panels_D.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Concrete_Panels_D.uasset"
+[2016.12.21-23.34.47:163][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Concrete_Panels_N.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Concrete_Panels_N.uasset"
+[2016.12.21-23.34.47:173][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Concrete_Poured_D.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Concrete_Poured_D.uasset"
+[2016.12.21-23.34.47:182][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Concrete_Poured_N.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Concrete_Poured_N.uasset"
+[2016.12.21-23.34.47:191][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Concrete_Tiles_D.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Concrete_Tiles_D.uasset"
+[2016.12.21-23.34.47:201][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Concrete_Tiles_M.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Concrete_Tiles_M.uasset"
+[2016.12.21-23.34.47:210][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Concrete_Tiles_N.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Concrete_Tiles_N.uasset"
+[2016.12.21-23.34.47:211][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Concrete_Tiles_Variation_M.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Concrete_Tiles_Variation_M.uasset"
+[2016.12.21-23.34.47:219][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Detail_Rocky_N.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Detail_Rocky_N.uasset"
+[2016.12.21-23.34.47:226][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Door_M.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Door_M.uasset"
+[2016.12.21-23.34.47:233][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Door_N.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Door_N.uasset"
+[2016.12.21-23.34.47:239][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Dust_Particle_D.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Dust_Particle_D.uasset"
+[2016.12.21-23.34.47:246][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Explosion_SubUV.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Explosion_SubUV.uasset"
+[2016.12.21-23.34.47:254][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Fire_SubUV.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Fire_SubUV.uasset"
+[2016.12.21-23.34.47:261][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Fire_Tiled_D.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Fire_Tiled_D.uasset"
+[2016.12.21-23.34.47:269][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Frame_M.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Frame_M.uasset"
+[2016.12.21-23.34.47:276][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Frame_N.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Frame_N.uasset"
+[2016.12.21-23.34.47:280][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Gradinet_01.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Gradinet_01.uasset"
+[2016.12.21-23.34.47:289][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Ground_Grass_D.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Ground_Grass_D.uasset"
+[2016.12.21-23.34.47:299][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Ground_Grass_N.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Ground_Grass_N.uasset"
+[2016.12.21-23.34.47:308][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Ground_Gravel_D.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Ground_Gravel_D.uasset"
+[2016.12.21-23.34.47:317][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Ground_Gravel_N.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Ground_Gravel_N.uasset"
+[2016.12.21-23.34.47:327][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_ground_Moss_D.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_ground_Moss_D.uasset"
+[2016.12.21-23.34.47:335][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Ground_Moss_N.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Ground_Moss_N.uasset"
+[2016.12.21-23.34.47:342][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Lamp_M.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Lamp_M.uasset"
+[2016.12.21-23.34.47:349][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Lamp_N.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Lamp_N.uasset"
+[2016.12.21-23.34.47:358][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_MacroVariation.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_MacroVariation.uasset"
+[2016.12.21-23.34.47:367][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Metal_Aluminum_D.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Metal_Aluminum_D.uasset"
+[2016.12.21-23.34.47:376][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Metal_Copper_D.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Metal_Copper_D.uasset"
+[2016.12.21-23.34.47:384][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Metal_Gold_D.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Metal_Gold_D.uasset"
+[2016.12.21-23.34.47:392][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Metal_Gold_N.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Metal_Gold_N.uasset"
+[2016.12.21-23.34.47:401][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Metal_Rust_D.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Metal_Rust_D.uasset"
+[2016.12.21-23.34.47:410][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Metal_Rust_N.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Metal_Rust_N.uasset"
+[2016.12.21-23.34.47:418][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Metal_Steel_D.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Metal_Steel_D.uasset"
+[2016.12.21-23.34.47:426][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Metal_Steel_N.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Metal_Steel_N.uasset"
+[2016.12.21-23.34.47:434][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Perlin_Noise_M.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Perlin_Noise_M.uasset"
+[2016.12.21-23.34.47:442][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_RockMesh_M.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_RockMesh_M.uasset"
+[2016.12.21-23.34.47:451][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_RockMesh_N.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_RockMesh_N.uasset"
+[2016.12.21-23.34.47:459][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Rock_Basalt_D.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Rock_Basalt_D.uasset"
+[2016.12.21-23.34.47:468][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Rock_Basalt_N.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Rock_Basalt_N.uasset"
+[2016.12.21-23.34.47:475][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Rock_Marble_Polished_D.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Rock_Marble_Polished_D.uasset"
+[2016.12.21-23.34.47:485][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Rock_Sandstone_D.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Rock_Sandstone_D.uasset"
+[2016.12.21-23.34.47:493][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Rock_Sandstone_N.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Rock_Sandstone_N.uasset"
+[2016.12.21-23.34.47:512][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Rock_Slate_D.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Rock_Slate_D.uasset"
+[2016.12.21-23.34.47:526][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Rock_Slate_N.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Rock_Slate_N.uasset"
+[2016.12.21-23.34.47:535][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Rock_Smooth_Granite_D.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Rock_Smooth_Granite_D.uasset"
+[2016.12.21-23.34.47:543][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Shelf_M.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Shelf_M.uasset"
+[2016.12.21-23.34.47:551][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Shelf_N.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Shelf_N.uasset"
+[2016.12.21-23.34.47:556][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Single_Tile_N.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Single_Tile_N.uasset"
+[2016.12.21-23.34.47:565][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Smoke_SubUV.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Smoke_SubUV.uasset"
+[2016.12.21-23.34.47:573][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Smoke_Tiled_D.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Smoke_Tiled_D.uasset"
+[2016.12.21-23.34.47:582][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Spark_Core.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Spark_Core.uasset"
+[2016.12.21-23.34.47:589][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Statue_M.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Statue_M.uasset"
+[2016.12.21-23.34.47:597][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Statue_N.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Statue_N.uasset"
+[2016.12.21-23.34.47:604][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_TableRound_M.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_TableRound_M.uasset"
+[2016.12.21-23.34.47:612][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_TableRound_N.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_TableRound_N.uasset"
+[2016.12.21-23.34.47:619][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Tech_Dot_M.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Tech_Dot_M.uasset"
+[2016.12.21-23.34.47:626][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Tech_Dot_N.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Tech_Dot_N.uasset"
+[2016.12.21-23.34.47:634][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Tech_Hex_Tile_M.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Tech_Hex_Tile_M.uasset"
+[2016.12.21-23.34.47:641][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Tech_Hex_Tile_N.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Tech_Hex_Tile_N.uasset"
+[2016.12.21-23.34.47:648][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Tech_Panel_M.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Tech_Panel_M.uasset"
+[2016.12.21-23.34.47:656][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Tech_Panel_N.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Tech_Panel_N.uasset"
+[2016.12.21-23.34.47:663][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Water_M.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Water_M.uasset"
+[2016.12.21-23.34.47:670][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Water_N.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Water_N.uasset"
+[2016.12.21-23.34.47:678][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Wood_Floor_Walnut_D.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Wood_Floor_Walnut_D.uasset"
+[2016.12.21-23.34.47:687][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Wood_Floor_Walnut_M.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Wood_Floor_Walnut_M.uasset"
+[2016.12.21-23.34.47:694][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Wood_Floor_Walnut_N.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Wood_Floor_Walnut_N.uasset"
+[2016.12.21-23.34.47:702][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Wood_Oak_D.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Wood_Oak_D.uasset"
+[2016.12.21-23.34.47:709][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Wood_Oak_N.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Wood_Oak_N.uasset"
+[2016.12.21-23.34.47:717][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Wood_Pine_D.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Wood_Pine_D.uasset"
+[2016.12.21-23.34.47:726][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Wood_Pine_N.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Wood_Pine_N.uasset"
+[2016.12.21-23.34.47:734][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Wood_Walnut_D.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Wood_Walnut_D.uasset"
+[2016.12.21-23.34.47:742][  0]LogPackFactory: Copied "../../../Samples/MobileStarterContent/Content/MobileStarterContent/Textures/T_Wood_Walnut_N.uasset" to "../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Textures/T_Wood_Walnut_N.uasset"
+[2016.12.21-23.34.47:825][  0]LogRenderer: Reallocating scene render targets to support 256x256 (Frame:2).
+[2016.12.21-23.34.47:876][  0]LogSavePackage: Save=12.97ms
+[2016.12.21-23.34.47:876][  0]LogSavePackage: Moving '../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Saved/Floor_400x40036C505434C44785AFAD0B1AEB0A37CE1.tmp' to '../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Architecture/Floor_400x400.uasset'
+[2016.12.21-23.34.47:882][  0]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/MobileStarterContent/Architecture/Floor_400x400.uasset
+[2016.12.21-23.34.47:882][  0]LogFeaturePack:Warning: Inserted 1 feature packs
+[2016.12.21-23.34.47:883][  0]Cmd: MAP LOAD FILE="../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/SideScrollerBP/Maps/SideScrollerExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.12.21-23.34.47:884][  0]LightingResults: New page: Lighting Build
+[2016.12.21-23.34.47:886][  0]MapCheck: New page: Map Check
+[2016.12.21-23.34.47:886][  0]LightingResults: New page: Lighting Build
+[2016.12.21-23.34.48:164][  0]LogTexture:Display: Building textures: T_ML_Rubber_Blue_01_D (AutoDXT)
+[2016.12.21-23.34.48:438][  0]LogTexture:Display: Building textures: T_ML_Rubber_Blue_01_N (BC5)
+[2016.12.21-23.34.48:479][  0]LogTexture:Display: Building textures: T_ML_Aluminum01 (AutoDXT)
+[2016.12.21-23.34.48:698][  0]LogTexture:Display: Building textures: T_ML_Aluminum01_N (BC5)
+[2016.12.21-23.34.48:741][  0]LogTexture:Display: Building textures: T_UE4_Mannequin_Mobile_M (AutoDXT)
+[2016.12.21-23.34.48:871][  0]LogTexture:Display: Building textures: T_UE4_Mannequin_Mobile_N (BC5)
+[2016.12.21-23.34.49:011][  0]LogMaterial: Missing cached shader map for material M_UE4Man_Body, compiling. 
+[2016.12.21-23.34.49:117][  0]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Mannequin/Animations/ThirdPersonJump_End.ThirdPersonJump_End
+[2016.12.21-23.34.49:118][  0]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Mannequin/Animations/ThirdPersonJump_Loop.ThirdPersonJump_Loop
+[2016.12.21-23.34.49:139][  0]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Mannequin/Animations/ThirdPersonJump_Start.ThirdPersonJump_Start
+[2016.12.21-23.34.49:155][  0]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Mannequin/Animations/ThirdPersonIdle.ThirdPersonIdle
+[2016.12.21-23.34.49:237][  0]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Mannequin/Animations/ThirdPersonRun.ThirdPersonRun
+[2016.12.21-23.34.49:257][  0]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Mannequin/Animations/ThirdPersonWalk.ThirdPersonWalk
+[2016.12.21-23.34.49:358][  0]LogMaterial: Missing cached shader map for material M_UE4Man_Body, compiling. 
+[2016.12.21-23.34.49:407][  0]LogMaterial: Missing cached shader map for material CubeMaterial, compiling. 
+[2016.12.21-23.34.49:433][  0]LogAIModule: Creating AISystem for world SideScrollerExampleMap
+[2016.12.21-23.34.49:441][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.12.21-23.34.49:441][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.12.21-23.34.49:492][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 51.14ms to complete.
+[2016.12.21-23.34.49:492][  0]LogFileHelpers: Loading map 'SideScrollerExampleMap' took 1.609
+[2016.12.21-23.34.49:652][  0]LogCollectionManager: Loaded 0 collections in 0.001500 seconds
+[2016.12.21-23.34.49:699][  0]LogFileCache: Scanning file cache for directory 'C:/Users/mrchargerlover/Documents/Unreal Projects/Hopp/Saved/Collections/' took 0.01s
+[2016.12.21-23.34.49:700][  0]LogFileCache: Scanning file cache for directory 'C:/Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/Developers/mrchargerlover/Collections/' took 0.01s
+[2016.12.21-23.34.49:700][  0]LogFileCache: Scanning file cache for directory 'C:/Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/Collections/' took 0.01s
+[2016.12.21-23.34.49:700][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000003 seconds
+[2016.12.21-23.34.49:708][  0]LogContentBrowser: Native class hierarchy populated in 0.0083 seconds. Added 2048 classes and 371 folders.
+[2016.12.21-23.34.49:712][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2016.12.21-23.34.49:712][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2016.12.21-23.34.49:713][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0004 seconds. Added 12 classes and 0 folders.
+[2016.12.21-23.34.49:718][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2016.12.21-23.34.49:756][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2016.12.21-23.34.49:771][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2016.12.21-23.34.49:777][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2016.12.21-23.34.49:803][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0004 seconds. Added 1 classes and 2 folders.
+[2016.12.21-23.34.49:803][  0]LogLoad: Full Startup: 9.18 seconds (BP compile: 0.08 seconds)
+[2016.12.21-23.34.49:803][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2016.12.21-23.34.49:803][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2016.12.21-23.34.49:813][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.12.21-23.34.49:814][  0]LogOcInput: OculusInput pre-init called
+[2016.12.21-23.34.49:890][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2016.12.21-23.34.50:004][  0]LogRenderer: Reallocating scene render targets to support 1060x584 (Frame:3).
+[2016.12.21-23.34.50:047][  1]LogAssetRegistry: Asset discovery search completed in 6.6228 seconds
+[2016.12.21-23.34.50:047][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2016.12.21-23.34.50:047][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000027 seconds (updated 0 objects)
+[2016.12.21-23.34.55:453][ 50]LogEditorViewport: Clicking on Actor (LMB): SideScrollerCharacter_C (SideScrollerCharacter)
+[2016.12.21-23.35.01:552][ 52]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (Floor)
+[2016.12.21-23.35.01:648][ 52]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (Wall3)
+[2016.12.21-23.35.01:710][ 52]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (Floor)
+[2016.12.21-23.35.07:535][ 55]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall3)
+[2016.12.21-23.35.16:116][903]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (SkySphereBlueprint)
+[2016.12.21-23.35.23:020][673]LogEditorViewport: Clicking on Actor (LMB): TextRenderActor (TemplateLabel)
+[2016.12.21-23.35.32:181][734]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2016.12.21-23.35.32:181][734]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.12.21-23.35.32:182][734]PIE: New page: PIE session: SideScrollerExampleMap (Dec 21, 2016, 1:35:32 PM)
+[2016.12.21-23.35.32:182][734]LogPlayLevel: Creating play world package: /Game/SideScrollerBP/Maps/UEDPIE_0_SideScrollerExampleMap
+[2016.12.21-23.35.32:207][734]LogPlayLevel: PIE: StaticDuplicateObject took: (0.024964s)
+[2016.12.21-23.35.32:208][734]LogAIModule: Creating AISystem for world SideScrollerExampleMap
+[2016.12.21-23.35.32:208][734]LogPlayLevel: PIE: World Init took: (0.000952s)
+[2016.12.21-23.35.32:208][734]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap to /Game/SideScrollerBP/Maps/UEDPIE_0_SideScrollerExampleMap.SideScrollerExampleMap (0.026186s)
+[2016.12.21-23.35.32:233][734]LogInit: XAudio2 using 'Middle Man (NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2016.12.21-23.35.32:238][734]LogInit: FAudioDevice initialized.
+[2016.12.21-23.35.32:309][734]LogWorld: Game class is 'SideScrollerGameMode_C'
+[2016.12.21-23.35.32:315][734]LogWorld: Bringing World /Game/SideScrollerBP/Maps/UEDPIE_0_SideScrollerExampleMap.SideScrollerExampleMap up for play (max tick rate 0) at 2016.12.21-18.35.32
+[2016.12.21-23.35.32:315][734]LogWorld: Bringing up level for play took: 0.004820
+[2016.12.21-23.35.32:321][734]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0005 seconds. Added 11 classes and 0 folders.
+[2016.12.21-23.35.32:322][734]PIE: Info Play in editor start time for /Game/SideScrollerBP/Maps/UEDPIE_0_SideScrollerExampleMap 0.398
+[2016.12.21-23.35.32:322][734]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2016.12.21-23.35.45:874][354]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2016.12.21-23.35.45:913][354]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2016.12.21-23.35.48:081][599]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (SkySphereBlueprint)
+[2016.12.21-23.35.51:401][985]LogEditorViewport: Clicking on Actor (LMB): TextRenderActor (TemplateLabel)
+[2016.12.21-23.35.58:745][782]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2016.12.21-23.35.58:745][782]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.12.21-23.35.58:745][782]PIE: New page: PIE session: SideScrollerExampleMap (Dec 21, 2016, 1:35:58 PM)
+[2016.12.21-23.35.58:745][782]LogPlayLevel: Creating play world package: /Game/SideScrollerBP/Maps/UEDPIE_0_SideScrollerExampleMap
+[2016.12.21-23.35.58:765][782]LogPlayLevel: PIE: StaticDuplicateObject took: (0.019664s)
+[2016.12.21-23.35.58:766][782]LogAIModule: Creating AISystem for world SideScrollerExampleMap
+[2016.12.21-23.35.58:766][782]LogPlayLevel: PIE: World Init took: (0.000866s)
+[2016.12.21-23.35.58:766][782]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap to /Game/SideScrollerBP/Maps/UEDPIE_0_SideScrollerExampleMap.SideScrollerExampleMap (0.020945s)
+[2016.12.21-23.35.58:783][782]LogInit: XAudio2 using 'Middle Man (NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2016.12.21-23.35.58:787][782]LogInit: FAudioDevice initialized.
+[2016.12.21-23.35.58:840][782]LogWorld: Game class is 'SideScrollerGameMode_C'
+[2016.12.21-23.35.58:845][782]LogWorld: Bringing World /Game/SideScrollerBP/Maps/UEDPIE_0_SideScrollerExampleMap.SideScrollerExampleMap up for play (max tick rate 0) at 2016.12.21-18.35.58
+[2016.12.21-23.35.58:845][782]LogWorld: Bringing up level for play took: 0.004548
+[2016.12.21-23.35.58:847][782]PIE: Info Play in editor start time for /Game/SideScrollerBP/Maps/UEDPIE_0_SideScrollerExampleMap 0.923
+[2016.12.21-23.35.58:847][782]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2016.12.21-23.36.17:911][ 65]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2016.12.21-23.36.17:949][ 65]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2016.12.21-23.36.19:665][263]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (SkySphereBlueprint)
+[2016.12.21-23.36.20:525][361]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (SkySphereBlueprint)
+[2016.12.21-23.36.36:725][506]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Ledge7)
+[2016.12.21-23.36.37:664][613]Cmd: EDIT COPY
+[2016.12.21-23.36.37:891][640]Cmd: EDIT PASTE
+[2016.12.21-23.36.57:736][684]LogEditorViewport: Clicking on Actor (LMB): TextRenderActor (TemplateLabel)
+[2016.12.21-23.36.58:480][768]Cmd: EDIT COPY
+[2016.12.21-23.36.58:751][800]Cmd: EDIT PASTE
+[2016.12.21-23.37.31:014][523]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2016.12.21-23.37.31:014][523]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.12.21-23.37.31:014][523]PIE: New page: PIE session: SideScrollerExampleMap (Dec 21, 2016, 1:37:31 PM)
+[2016.12.21-23.37.31:014][523]LogPlayLevel: Creating play world package: /Game/SideScrollerBP/Maps/UEDPIE_0_SideScrollerExampleMap
+[2016.12.21-23.37.31:035][523]LogPlayLevel: PIE: StaticDuplicateObject took: (0.020295s)
+[2016.12.21-23.37.31:035][523]LogAIModule: Creating AISystem for world SideScrollerExampleMap
+[2016.12.21-23.37.31:036][523]LogPlayLevel: PIE: World Init took: (0.001023s)
+[2016.12.21-23.37.31:036][523]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap to /Game/SideScrollerBP/Maps/UEDPIE_0_SideScrollerExampleMap.SideScrollerExampleMap (0.021679s)
+[2016.12.21-23.37.31:053][523]LogInit: XAudio2 using 'Middle Man (NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2016.12.21-23.37.31:058][523]LogInit: FAudioDevice initialized.
+[2016.12.21-23.37.31:116][523]LogWorld: Game class is 'SideScrollerGameMode_C'
+[2016.12.21-23.37.31:121][523]LogWorld: Bringing World /Game/SideScrollerBP/Maps/UEDPIE_0_SideScrollerExampleMap.SideScrollerExampleMap up for play (max tick rate 0) at 2016.12.21-18.37.31
+[2016.12.21-23.37.31:122][523]LogWorld: Bringing up level for play took: 0.004830
+[2016.12.21-23.37.31:123][523]PIE: Info Play in editor start time for /Game/SideScrollerBP/Maps/UEDPIE_0_SideScrollerExampleMap -0.801
+[2016.12.21-23.37.31:123][523]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2016.12.21-23.37.50:945][897]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2016.12.21-23.37.50:981][897]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2016.12.21-23.37.53:005][132]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Ledge10)
+[2016.12.21-23.37.53:963][242]Cmd: DELETE
+[2016.12.21-23.37.53:963][242]Cmd: ACTOR DELETE
+[2016.12.21-23.37.53:964][242]LogEditorActor: Deleted Actor: StaticMeshActor
+[2016.12.21-23.37.53:972][242]LogEditorActor: Deleted 1 Actors (0.008 secs)
+[2016.12.21-23.37.55:587][435]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Ledge7)
+[2016.12.21-23.37.56:127][495]Cmd: EDIT COPY
+[2016.12.21-23.37.56:329][519]Cmd: EDIT PASTE
+[2016.12.21-23.38.07:831][777]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2016.12.21-23.38.07:831][777]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.12.21-23.38.07:831][777]PIE: New page: PIE session: SideScrollerExampleMap (Dec 21, 2016, 1:38:07 PM)
+[2016.12.21-23.38.07:831][777]LogPlayLevel: Creating play world package: /Game/SideScrollerBP/Maps/UEDPIE_0_SideScrollerExampleMap
+[2016.12.21-23.38.07:852][777]LogPlayLevel: PIE: StaticDuplicateObject took: (0.020370s)
+[2016.12.21-23.38.07:852][777]LogAIModule: Creating AISystem for world SideScrollerExampleMap
+[2016.12.21-23.38.07:852][777]LogPlayLevel: PIE: World Init took: (0.000726s)
+[2016.12.21-23.38.07:852][777]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap to /Game/SideScrollerBP/Maps/UEDPIE_0_SideScrollerExampleMap.SideScrollerExampleMap (0.021341s)
+[2016.12.21-23.38.07:869][777]LogInit: XAudio2 using 'Middle Man (NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2016.12.21-23.38.07:874][777]LogInit: FAudioDevice initialized.
+[2016.12.21-23.38.07:928][777]LogWorld: Game class is 'SideScrollerGameMode_C'
+[2016.12.21-23.38.07:933][777]LogWorld: Bringing World /Game/SideScrollerBP/Maps/UEDPIE_0_SideScrollerExampleMap.SideScrollerExampleMap up for play (max tick rate 0) at 2016.12.21-18.38.07
+[2016.12.21-23.38.07:933][777]LogWorld: Bringing up level for play took: 0.004782
+[2016.12.21-23.38.07:934][777]PIE: Info Play in editor start time for /Game/SideScrollerBP/Maps/UEDPIE_0_SideScrollerExampleMap 0.011
+[2016.12.21-23.38.07:935][777]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2016.12.21-23.38.14:803][597]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2016.12.21-23.38.14:849][597]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2016.12.21-23.38.40:735][282]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Ledge10)
+[2016.12.21-23.38.41:841][412]Cmd: DELETE
+[2016.12.21-23.38.41:841][412]Cmd: ACTOR DELETE
+[2016.12.21-23.38.41:841][412]LogEditorActor: Deleted Actor: StaticMeshActor
+[2016.12.21-23.38.41:849][412]LogEditorActor: Deleted 1 Actors (0.008 secs)
+[2016.12.21-23.38.42:860][533]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Ledge7)
+[2016.12.21-23.38.49:962][284]LogEditorViewport: Clicking on Actor (LMB): LightmassImportanceVolume (LightmassImportanceVolume)
+[2016.12.21-23.38.50:735][372]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall3)
+[2016.12.21-23.38.55:388][759]LogTexture:Display: Building textures: Texture2D_2 (G8)
+[2016.12.21-23.38.56:340][854]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (SkySphereBlueprint)
+[2016.12.21-23.38.57:143][948]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (SkySphereBlueprint)
+[2016.12.21-23.38.57:655][  7]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall3)
+[2016.12.21-23.39.02:931][466]Cmd: TRANSACTION UNDO
+[2016.12.21-23.39.02:931][466]LogEditorTransaction: Undo Clicking on Actors
+[2016.12.21-23.39.04:685][624]Cmd: TRANSACTION UNDO
+[2016.12.21-23.39.04:685][624]LogEditorTransaction: Undo Clicking on Actors
+[2016.12.21-23.39.05:455][705]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (SkySphereBlueprint)
+[2016.12.21-23.39.06:400][817]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (SkySphereBlueprint)
+[2016.12.21-23.39.06:919][878]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall3)
+[2016.12.21-23.39.15:749][850]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall3)
+[2016.12.21-23.39.23:433][675]LogScriptCore:Warning: Attempted to get an item from array CallFunc_GetAllActorsOfClass_OutActors out of bounds [0/0]!
+
+[2016.12.21-23.39.23:433][675]LogBlueprintUserMessages: [Default__Landscape_Sculpt_Mode_C] No Landscape for you
+[2016.12.21-23.39.23:433][675]LogScriptCore:Warning: Attempted to get an item from array CallFunc_GetAllActorsOfClass_OutActors out of bounds [0/0]!
+
+[2016.12.21-23.39.23:433][675]LogBlueprintUserMessages: [Default__Landscape_Sculpt_Mode_C] No Landscape for you
+[2016.12.21-23.39.24:231][765]LogScriptCore:Warning: Attempted to get an item from array CallFunc_GetAllActorsOfClass_OutActors2 out of bounds [0/0]!
+
+[2016.12.21-23.39.24:231][765]LogBlueprintUserMessages: [Default__Landscape_Sculpt_Mode_C] No Landscape for you
+[2016.12.21-23.39.24:231][765]LogScriptCore:Warning: Attempted to get an item from array CallFunc_GetAllActorsOfClass_OutActors out of bounds [0/0]!
+
+[2016.12.21-23.39.24:231][765]LogBlueprintUserMessages: [Default__Landscape_Sculpt_Mode_C] No Landscape for you
+[2016.12.21-23.39.24:942][844]LogScriptCore:Warning: Attempted to get an item from array CallFunc_GetAllActorsOfClass_OutActors2 out of bounds [0/0]!
+
+[2016.12.21-23.39.24:942][844]LogBlueprintUserMessages: [Default__Landscape_Sculpt_Mode_C] No Landscape for you
+[2016.12.21-23.39.24:942][844]LogScriptCore:Warning: Attempted to get an item from array CallFunc_GetAllActorsOfClass_OutActors out of bounds [0/0]!
+
+[2016.12.21-23.39.24:942][844]LogBlueprintUserMessages: [Default__Landscape_Sculpt_Mode_C] No Landscape for you
+[2016.12.21-23.39.25:365][889]LogScriptCore:Warning: Attempted to get an item from array CallFunc_GetAllActorsOfClass_OutActors2 out of bounds [0/0]!
+
+[2016.12.21-23.39.25:365][889]LogBlueprintUserMessages: [Default__Landscape_Sculpt_Mode_C] No Landscape for you
+[2016.12.21-23.39.25:365][889]LogScriptCore:Warning: Attempted to get an item from array CallFunc_GetAllActorsOfClass_OutActors out of bounds [0/0]!
+
+[2016.12.21-23.39.25:366][889]LogBlueprintUserMessages: [Default__Landscape_Sculpt_Mode_C] No Landscape for you
+[2016.12.21-23.39.25:757][931]LogScriptCore:Warning: Attempted to get an item from array CallFunc_GetAllActorsOfClass_OutActors2 out of bounds [0/0]!
+
+[2016.12.21-23.39.25:757][931]LogBlueprintUserMessages: [Default__Landscape_Sculpt_Mode_C] No Landscape for you
+[2016.12.21-23.39.25:757][931]LogScriptCore:Warning: Attempted to get an item from array CallFunc_GetAllActorsOfClass_OutActors out of bounds [0/0]!
+
+[2016.12.21-23.39.25:757][931]LogBlueprintUserMessages: [Default__Landscape_Sculpt_Mode_C] No Landscape for you
+[2016.12.21-23.39.26:183][977]LogScriptCore:Warning: Attempted to get an item from array CallFunc_GetAllActorsOfClass_OutActors2 out of bounds [0/0]!
+
+[2016.12.21-23.39.26:183][977]LogBlueprintUserMessages: [Default__Landscape_Sculpt_Mode_C] No Landscape for you
+[2016.12.21-23.39.26:183][977]LogScriptCore:Warning: Attempted to get an item from array CallFunc_GetAllActorsOfClass_OutActors out of bounds [0/0]!
+
+[2016.12.21-23.39.26:183][977]LogBlueprintUserMessages: [Default__Landscape_Sculpt_Mode_C] No Landscape for you
+[2016.12.21-23.39.26:616][ 24]LogScriptCore:Warning: Attempted to get an item from array CallFunc_GetAllActorsOfClass_OutActors2 out of bounds [0/0]!
+
+[2016.12.21-23.39.26:616][ 24]LogBlueprintUserMessages: [Default__Landscape_Sculpt_Mode_C] No Landscape for you
+[2016.12.21-23.39.26:616][ 24]LogScriptCore:Warning: Attempted to get an item from array CallFunc_GetAllActorsOfClass_OutActors out of bounds [0/0]!
+
+[2016.12.21-23.39.26:616][ 24]LogBlueprintUserMessages: [Default__Landscape_Sculpt_Mode_C] No Landscape for you
+[2016.12.21-23.39.27:052][ 71]LogScriptCore:Warning: Attempted to get an item from array CallFunc_GetAllActorsOfClass_OutActors2 out of bounds [0/0]!
+
+[2016.12.21-23.39.27:052][ 71]LogBlueprintUserMessages: [Default__Landscape_Sculpt_Mode_C] No Landscape for you
+[2016.12.21-23.39.27:052][ 71]LogScriptCore:Warning: Attempted to get an item from array CallFunc_GetAllActorsOfClass_OutActors out of bounds [0/0]!
+
+[2016.12.21-23.39.27:052][ 71]LogBlueprintUserMessages: [Default__Landscape_Sculpt_Mode_C] No Landscape for you
+[2016.12.21-23.39.27:536][124]LogScriptCore:Warning: Attempted to get an item from array CallFunc_GetAllActorsOfClass_OutActors2 out of bounds [0/0]!
+
+[2016.12.21-23.39.27:536][124]LogBlueprintUserMessages: [Default__Landscape_Sculpt_Mode_C] No Landscape for you
+[2016.12.21-23.39.27:536][124]LogScriptCore:Warning: Attempted to get an item from array CallFunc_GetAllActorsOfClass_OutActors out of bounds [0/0]!
+
+[2016.12.21-23.39.27:536][124]LogBlueprintUserMessages: [Default__Landscape_Sculpt_Mode_C] No Landscape for you
+[2016.12.21-23.39.27:875][159]LogScriptCore:Warning: Attempted to get an item from array CallFunc_GetAllActorsOfClass_OutActors2 out of bounds [0/0]!
+
+[2016.12.21-23.39.27:875][159]LogBlueprintUserMessages: [Default__Landscape_Sculpt_Mode_C] No Landscape for you
+[2016.12.21-23.39.27:876][159]LogScriptCore:Warning: Attempted to get an item from array CallFunc_GetAllActorsOfClass_OutActors out of bounds [0/0]!
+
+[2016.12.21-23.39.27:876][159]LogBlueprintUserMessages: [Default__Landscape_Sculpt_Mode_C] No Landscape for you
+[2016.12.21-23.39.28:135][185]LogScriptCore:Warning: Attempted to get an item from array CallFunc_GetAllActorsOfClass_OutActors2 out of bounds [0/0]!
+
+[2016.12.21-23.39.28:135][185]LogBlueprintUserMessages: [Default__Landscape_Sculpt_Mode_C] No Landscape for you
+[2016.12.21-23.39.28:135][185]LogScriptCore:Warning: Attempted to get an item from array CallFunc_GetAllActorsOfClass_OutActors out of bounds [0/0]!
+
+[2016.12.21-23.39.28:135][185]LogBlueprintUserMessages: [Default__Landscape_Sculpt_Mode_C] No Landscape for you
+[2016.12.21-23.39.28:334][205]LogScriptCore:Warning: Attempted to get an item from array CallFunc_GetAllActorsOfClass_OutActors2 out of bounds [0/0]!
+
+[2016.12.21-23.39.28:334][205]LogBlueprintUserMessages: [Default__Landscape_Sculpt_Mode_C] No Landscape for you
+[2016.12.21-23.39.28:334][205]LogScriptCore:Warning: Attempted to get an item from array CallFunc_GetAllActorsOfClass_OutActors out of bounds [0/0]!
+
+[2016.12.21-23.39.28:334][205]LogBlueprintUserMessages: [Default__Landscape_Sculpt_Mode_C] No Landscape for you
+[2016.12.21-23.39.28:534][225]LogScriptCore:Warning: Attempted to get an item from array CallFunc_GetAllActorsOfClass_OutActors2 out of bounds [0/0]!
+
+[2016.12.21-23.39.28:534][225]LogBlueprintUserMessages: [Default__Landscape_Sculpt_Mode_C] No Landscape for you
+[2016.12.21-23.39.28:534][225]LogScriptCore:Warning: Attempted to get an item from array CallFunc_GetAllActorsOfClass_OutActors out of bounds [0/0]!
+
+[2016.12.21-23.39.28:534][225]LogBlueprintUserMessages: [Default__Landscape_Sculpt_Mode_C] No Landscape for you
+[2016.12.21-23.39.28:726][244]LogScriptCore:Warning: Attempted to get an item from array CallFunc_GetAllActorsOfClass_OutActors2 out of bounds [0/0]!
+
+[2016.12.21-23.39.28:726][244]LogBlueprintUserMessages: [Default__Landscape_Sculpt_Mode_C] No Landscape for you
+[2016.12.21-23.39.28:726][244]LogScriptCore:Warning: Attempted to get an item from array CallFunc_GetAllActorsOfClass_OutActors out of bounds [0/0]!
+
+[2016.12.21-23.39.28:727][244]LogBlueprintUserMessages: [Default__Landscape_Sculpt_Mode_C] No Landscape for you
+[2016.12.21-23.39.28:922][263]LogScriptCore:Warning: Attempted to get an item from array CallFunc_GetAllActorsOfClass_OutActors2 out of bounds [0/0]!
+
+[2016.12.21-23.39.28:922][263]LogBlueprintUserMessages: [Default__Landscape_Sculpt_Mode_C] No Landscape for you
+[2016.12.21-23.39.28:922][263]LogScriptCore:Warning: Attempted to get an item from array CallFunc_GetAllActorsOfClass_OutActors out of bounds [0/0]!
+
+[2016.12.21-23.39.28:922][263]LogBlueprintUserMessages: [Default__Landscape_Sculpt_Mode_C] No Landscape for you
+[2016.12.21-23.39.29:116][282]LogScriptCore:Warning: Attempted to get an item from array CallFunc_GetAllActorsOfClass_OutActors2 out of bounds [0/0]!
+
+[2016.12.21-23.39.29:116][282]LogBlueprintUserMessages: [Default__Landscape_Sculpt_Mode_C] No Landscape for you
+[2016.12.21-23.39.29:116][282]LogScriptCore:Warning: Attempted to get an item from array CallFunc_GetAllActorsOfClass_OutActors out of bounds [0/0]!
+
+[2016.12.21-23.39.29:116][282]LogBlueprintUserMessages: [Default__Landscape_Sculpt_Mode_C] No Landscape for you
+[2016.12.21-23.39.32:555][679]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall3)
+[2016.12.21-23.39.33:468][787]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (SkySphereBlueprint)
+[2016.12.21-23.39.34:122][864]Cmd: TRANSACTION UNDO
+[2016.12.21-23.39.34:122][864]LogEditorTransaction: Undo Clicking on Actors
+[2016.12.21-23.39.34:562][900]Cmd: TRANSACTION UNDO
+[2016.12.21-23.39.34:562][900]LogEditorTransaction: Undo Clicking on Actors
+[2016.12.21-23.39.34:963][942]Cmd: TRANSACTION UNDO
+[2016.12.21-23.39.34:963][942]LogEditorTransaction: Undo Clicking on Actors
+[2016.12.21-23.39.35:325][980]Cmd: TRANSACTION UNDO
+[2016.12.21-23.39.35:325][980]LogEditorTransaction: Undo Clicking on Actors
+[2016.12.21-23.39.35:706][ 21]Cmd: TRANSACTION UNDO
+[2016.12.21-23.39.35:706][ 21]LogEditorTransaction: Undo Clicking on Actors
+[2016.12.21-23.39.45:288][944]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (SkySphereBlueprint)
+[2016.12.21-23.40.07:103][911]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (SkySphereBlueprint)
+[2016.12.21-23.40.16:959][786]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (SkySphereBlueprint)
+[2016.12.21-23.40.23:213][481]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (SkySphereBlueprint)
+[2016.12.21-23.40.27:745][993]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2016.12.21-23.40.27:745][993]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.12.21-23.40.27:746][993]PIE: New page: PIE session: SideScrollerExampleMap (Dec 21, 2016, 1:40:27 PM)
+[2016.12.21-23.40.27:746][993]LogPlayLevel: Creating play world package: /Game/SideScrollerBP/Maps/UEDPIE_0_SideScrollerExampleMap
+[2016.12.21-23.40.27:766][993]LogPlayLevel: PIE: StaticDuplicateObject took: (0.020116s)
+[2016.12.21-23.40.27:767][993]LogAIModule: Creating AISystem for world SideScrollerExampleMap
+[2016.12.21-23.40.27:767][993]LogPlayLevel: PIE: World Init took: (0.000872s)
+[2016.12.21-23.40.27:767][993]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap to /Game/SideScrollerBP/Maps/UEDPIE_0_SideScrollerExampleMap.SideScrollerExampleMap (0.021242s)
+[2016.12.21-23.40.27:787][993]LogInit: XAudio2 using 'Middle Man (NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2016.12.21-23.40.27:792][993]LogInit: FAudioDevice initialized.
+[2016.12.21-23.40.27:850][993]LogWorld: Game class is 'SideScrollerGameMode_C'
+[2016.12.21-23.40.27:856][993]LogWorld: Bringing World /Game/SideScrollerBP/Maps/UEDPIE_0_SideScrollerExampleMap.SideScrollerExampleMap up for play (max tick rate 0) at 2016.12.21-18.40.27
+[2016.12.21-23.40.27:856][993]LogWorld: Bringing up level for play took: 0.004609
+[2016.12.21-23.40.27:857][993]PIE: Info Play in editor start time for /Game/SideScrollerBP/Maps/UEDPIE_0_SideScrollerExampleMap -0.066
+[2016.12.21-23.40.27:857][993]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2016.12.21-23.40.34:079][726]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2016.12.21-23.40.34:125][726]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2016.12.21-23.40.35:365][867]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (SkySphereBlueprint)
+[2016.12.21-23.42.09:703][ 21]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (SkySphereBlueprint)
+[2016.12.21-23.42.34:156][634]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0008 seconds. Added 111 classes and 0 folders.
+[2016.12.21-23.42.34:801][634]LogTexture:Display: Building textures: TilePatine_N (BC5)
+[2016.12.21-23.42.34:852][634]LogTexture:Display: Building textures: TilePatine_D (AutoDXT)
+[2016.12.21-23.43.12:508][109]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (SkySphereBlueprint)
+[2016.12.21-23.43.24:156][447]LogEditorViewport: Clicking on Actor (LMB): TextRenderActor (TemplateLabel2)
+[2016.12.21-23.43.28:389][945]Cmd: EDIT COPY
+[2016.12.21-23.43.28:642][974]Cmd: EDIT PASTE
+[2016.12.21-23.43.34:392][606]Cmd: DELETE
+[2016.12.21-23.43.34:392][606]Cmd: ACTOR DELETE
+[2016.12.21-23.43.34:393][606]LogEditorActor: Deleted Actor: TextRenderActor
+[2016.12.21-23.43.34:417][606]LogEditorActor: Deleted 1 Actors (0.024 secs)
+[2016.12.21-23.43.37:236][932]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall1)
+[2016.12.21-23.43.38:174][ 38]LogEditorViewport: Clicking on Actor (LMB): TextRenderActor (TemplateLabel2)
+[2016.12.21-23.43.39:149][149]Cmd: TRANSACTION UNDO
+[2016.12.21-23.43.39:149][149]LogEditorTransaction: Undo Clicking on Actors
+[2016.12.21-23.43.39:980][227]Cmd: TRANSACTION UNDO
+[2016.12.21-23.43.39:980][227]LogEditorTransaction: Undo Move Actors
+[2016.12.21-23.43.40:403][271]Cmd: TRANSACTION UNDO
+[2016.12.21-23.43.40:403][271]LogEditorTransaction: Undo Move Actors
+[2016.12.21-23.43.41:551][403]Cmd: EDIT COPY
+[2016.12.21-23.43.41:735][423]Cmd: EDIT PASTE
+[2016.12.21-23.43.55:634][ 15]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (SkySphereBlueprint)
+[2016.12.21-23.43.57:546][203]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2016.12.21-23.43.57:546][203]BlueprintLog: New page: Pre-Play auto-recompile
+[2016.12.21-23.43.57:547][203]LogPlayLevel: [PlayLevel] Compiling SideScrollerCharacter before play...
+[2016.12.21-23.43.57:609][203]LogPlayLevel: PlayLevel: Blueprint regeneration took 63 ms (1 blueprints)
+[2016.12.21-23.43.57:625][203]PIE: New page: PIE session: SideScrollerExampleMap (Dec 21, 2016, 1:43:57 PM)
+[2016.12.21-23.43.57:625][203]LogPlayLevel: Creating play world package: /Game/SideScrollerBP/Maps/UEDPIE_0_SideScrollerExampleMap
+[2016.12.21-23.43.57:645][203]LogPlayLevel: PIE: StaticDuplicateObject took: (0.019873s)
+[2016.12.21-23.43.57:646][203]LogAIModule: Creating AISystem for world SideScrollerExampleMap
+[2016.12.21-23.43.57:646][203]LogPlayLevel: PIE: World Init took: (0.000829s)
+[2016.12.21-23.43.57:646][203]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap to /Game/SideScrollerBP/Maps/UEDPIE_0_SideScrollerExampleMap.SideScrollerExampleMap (0.020933s)
+[2016.12.21-23.43.57:669][203]LogInit: XAudio2 using 'Middle Man (NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2016.12.21-23.43.57:674][203]LogInit: FAudioDevice initialized.
+[2016.12.21-23.43.57:731][203]LogWorld: Game class is 'SideScrollerGameMode_C'
+[2016.12.21-23.43.57:737][203]LogWorld: Bringing World /Game/SideScrollerBP/Maps/UEDPIE_0_SideScrollerExampleMap.SideScrollerExampleMap up for play (max tick rate 0) at 2016.12.21-18.43.57
+[2016.12.21-23.43.57:737][203]LogWorld: Bringing up level for play took: 0.004673
+[2016.12.21-23.43.57:738][203]PIE: Info Play in editor start time for /Game/SideScrollerBP/Maps/UEDPIE_0_SideScrollerExampleMap -0.185
+[2016.12.21-23.43.57:738][203]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2016.12.21-23.44.05:270][ 99]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2016.12.21-23.44.05:311][ 99]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerBP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2016.12.21-23.44.16:300][883]LogSavePackage: Save=33.67ms
+[2016.12.21-23.44.16:300][883]LogSavePackage: Moving '../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Saved/SideScrollerCharacter59C7C37C4FB0B643CB0A8EBFD13995E1.tmp' to '../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/SideScrollerBP/Blueprints/SideScrollerCharacter.uasset'
+[2016.12.21-23.44.16:304][883]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/SideScrollerBP/Blueprints/SideScrollerCharacter.uasset
+[2016.12.21-23.44.16:612][883]LogSavePackage: Save=257.41ms
+[2016.12.21-23.44.16:612][883]LogSavePackage: Moving '../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Saved/UEDPCSideScrollerExampleMap66FCB69947AB42C541153896FB2EA196.tmp' to '../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Saved/Autosaves/Game/SideScrollerBP/Maps/UEDPCSideScrollerExampleMap.umap'
+[2016.12.21-23.44.16:613][883]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Saved/Autosaves/Game/SideScrollerBP/Maps/UEDPCSideScrollerExampleMap.umap
+[2016.12.21-23.44.16:623][883]LogEditorTransaction: Undo Spawn Play From Here Start
+[2016.12.21-23.44.20:829][294]LogWindows: LaunchURL http://docs.unrealengine.com/latest/INT/Platforms/Android/GettingStarted/index.html?utm_source=editor&utm_medium=docs&utm_campaign=tutorials
+[2016.12.21-23.46.39:796][242]Cmd: CLOSE_SLATE_MAINFRAME
+[2016.12.21-23.46.41:632][242]LogSavePackage: Save=255.57ms
+[2016.12.21-23.46.41:632][242]LogSavePackage: Moving '../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Saved/SideScrollerExampleMap6FDCF2334A88064892F1BFA60440ECC2.tmp' to '../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/SideScrollerBP/Maps/SideScrollerExampleMap.umap'
+[2016.12.21-23.46.41:637][242]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopp/Content/SideScrollerBP/Maps/SideScrollerExampleMap.umap
+[2016.12.21-23.46.41:657][242]LogFileHelpers: Saving map 'SideScrollerExampleMap' took 0.366
+[2016.12.21-23.46.41:892][243]Cmd: QUIT_EDITOR
+[2016.12.21-23.46.42:831][243]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.12.21-23.46.42:861][243]LogExit: Preparing to exit.
+[2016.12.21-23.46.43:587][243]LogExit: Editor shut down
+[2016.12.21-23.46.43:587][243]LogExit: Transaction tracking system shut down
+[2016.12.21-23.46.43:742][243]LogObj: Freed 0b from 0 cluster array pools.
+[2016.12.21-23.46.43:742][243]LogExit: Object subsystem successfully closed.
+[2016.12.21-23.46.43:761][243]LogD3D11RHI: Shutdown
+[2016.12.21-23.46.43:761][243]LogD3D11RHI: CleanupD3DDevice
+[2016.12.21-23.46.43:817][243]LogD3D11RHI: ~FD3D11DynamicRHI
+[2016.12.21-23.46.43:834][243]LogModuleManager: Shutting down and abandoning module ExternalImagePicker (217)
+[2016.12.21-23.46.43:834][243]LogModuleManager: Shutting down and abandoning module BlueprintGraph (216)
+[2016.12.21-23.46.43:834][243]LogModuleManager: Shutting down and abandoning module HierarchicalLODUtilities (215)
+[2016.12.21-23.46.43:834][243]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (214)
+[2016.12.21-23.46.43:834][243]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (213)
+[2016.12.21-23.46.43:834][243]LogModuleManager: Shutting down and abandoning module CrashTracker (212)
+[2016.12.21-23.46.43:834][243]LogModuleManager: Shutting down and abandoning module WidgetCarousel (211)
+[2016.12.21-23.46.43:834][243]LogModuleManager: Shutting down and abandoning module AddContentDialog (210)
+[2016.12.21-23.46.43:835][243]LogModuleManager: Shutting down and abandoning module GameplayTags (209)
+[2016.12.21-23.46.43:835][243]LogModuleManager: Shutting down and abandoning module EditorWidgets (208)
+[2016.12.21-23.46.43:835][243]LogModuleManager: Shutting down and abandoning module CollectionManager (207)
+[2016.12.21-23.46.43:835][243]LogModuleManager: Shutting down and abandoning module SceneOutliner (206)
+[2016.12.21-23.46.43:835][243]LogModuleManager: Shutting down and abandoning module StatsViewer (205)
+[2016.12.21-23.46.43:835][243]LogModuleManager: Shutting down and abandoning module FoliageEdit (204)
+[2016.12.21-23.46.43:835][243]LogModuleManager: Shutting down and abandoning module LandscapeEditor (203)
+[2016.12.21-23.46.43:835][243]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (202)
+[2016.12.21-23.46.43:835][243]LogModuleManager: Shutting down and abandoning module ActorPickerMode (201)
+[2016.12.21-23.46.43:835][243]LogModuleManager: Shutting down and abandoning module GeometryMode (200)
+[2016.12.21-23.46.43:835][243]LogModuleManager: Shutting down and abandoning module TextureAlignMode (199)
+[2016.12.21-23.46.43:835][243]LogModuleManager: Shutting down and abandoning module BspMode (198)
+[2016.12.21-23.46.43:835][243]LogModuleManager: Shutting down and abandoning module HardwareSurvey (197)
+[2016.12.21-23.46.43:835][243]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (196)
+[2016.12.21-23.46.43:835][243]LogModuleManager: Shutting down and abandoning module SequenceRecorder (195)
+[2016.12.21-23.46.43:835][243]LogModuleManager: Shutting down and abandoning module AutomationWorker (194)
+[2016.12.21-23.46.43:835][243]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (193)
+[2016.12.21-23.46.43:835][243]LogModuleManager: Shutting down and abandoning module PlacementMode (192)
+[2016.12.21-23.46.43:835][243]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (191)
+[2016.12.21-23.46.43:835][243]LogModuleManager: Shutting down and abandoning module CharacterAI (190)
+[2016.12.21-23.46.43:835][243]LogModuleManager: Shutting down and abandoning module SmartSnapping (189)
+[2016.12.21-23.46.43:835][243]LogModuleManager: Shutting down and abandoning module SessionServices (188)
+[2016.12.21-23.46.43:835][243]LogModuleManager: Shutting down and abandoning module ViewportSnapping (187)
+[2016.12.21-23.46.43:835][243]LogModuleManager: Shutting down and abandoning module LogVisualizer (186)
+[2016.12.21-23.46.43:836][243]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (185)
+[2016.12.21-23.46.43:836][243]LogModuleManager: Shutting down and abandoning module IntroTutorials (184)
+[2016.12.21-23.46.43:836][243]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (183)
+[2016.12.21-23.46.43:836][243]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (182)
+[2016.12.21-23.46.43:836][243]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (181)
+[2016.12.21-23.46.43:836][243]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (180)
+[2016.12.21-23.46.44:777][243]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (179)
+[2016.12.21-23.46.44:777][243]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (178)
+[2016.12.21-23.46.44:777][243]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (177)
+[2016.12.21-23.46.44:777][243]LogModuleManager: Shutting down and abandoning module MergeActors (176)
+[2016.12.21-23.46.44:777][243]LogModuleManager: Shutting down and abandoning module SizeMap (175)
+[2016.12.21-23.46.44:777][243]LogModuleManager: Shutting down and abandoning module TreeMap (174)
+[2016.12.21-23.46.44:777][243]LogModuleManager: Shutting down and abandoning module ReferenceViewer (173)
+[2016.12.21-23.46.44:777][243]LogModuleManager: Shutting down and abandoning module LocalizationService (172)
+[2016.12.21-23.46.44:777][243]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (171)
+[2016.12.21-23.46.44:777][243]LogModuleManager: Shutting down and abandoning module HardwareTargeting (170)
+[2016.12.21-23.46.44:777][243]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (169)
+[2016.12.21-23.46.44:777][243]LogModuleManager: Shutting down and abandoning module UndoHistory (168)
+[2016.12.21-23.46.44:777][243]LogModuleManager: Shutting down and abandoning module UserFeedback (167)
+[2016.12.21-23.46.44:777][243]LogModuleManager: Shutting down and abandoning module XmlParser (166)
+[2016.12.21-23.46.44:777][243]LogModuleManager: Shutting down and abandoning module Blutility (165)
+[2016.12.21-23.46.44:777][243]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (164)
+[2016.12.21-23.46.44:777][243]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (163)
+[2016.12.21-23.46.44:777][243]LogModuleManager: Shutting down and abandoning module InputBindingEditor (162)
+[2016.12.21-23.46.44:778][243]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (161)
+[2016.12.21-23.46.44:778][243]LogModuleManager: Shutting down and abandoning module SettingsEditor (160)
+[2016.12.21-23.46.44:778][243]LogModuleManager: Shutting down and abandoning module ProjectLauncher (159)
+[2016.12.21-23.46.44:778][243]LogModuleManager: Shutting down and abandoning module SessionFrontend (158)
+[2016.12.21-23.46.44:778][243]LogModuleManager: Shutting down and abandoning module ProfilerClient (157)
+[2016.12.21-23.46.44:778][243]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (156)
+[2016.12.21-23.46.44:778][243]LogModuleManager: Shutting down and abandoning module DeviceManager (155)
+[2016.12.21-23.46.44:820][243]LogModuleManager: Shutting down and abandoning module AutomationController (154)
+[2016.12.21-23.46.44:820][243]LogModuleManager: Shutting down and abandoning module AutomationWindow (153)
+[2016.12.21-23.46.44:820][243]LogModuleManager: Shutting down and abandoning module Layers (152)
+[2016.12.21-23.46.44:820][243]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (151)
+[2016.12.21-23.46.44:820][243]LogModuleManager: Shutting down and abandoning module DetailCustomizations (150)
+[2016.12.21-23.46.44:820][243]LogModuleManager: Shutting down and abandoning module PackagesDialog (149)
+[2016.12.21-23.46.44:820][243]LogModuleManager: Shutting down and abandoning module Persona (148)
+[2016.12.21-23.46.44:820][243]LogModuleManager: Shutting down and abandoning module Kismet (147)
+[2016.12.21-23.46.44:820][243]LogModuleManager: Shutting down and abandoning module GraphEditor (146)
+[2016.12.21-23.46.44:820][243]LogModuleManager: Shutting down and abandoning module ClassViewer (145)
+[2016.12.21-23.46.44:821][243]LogModuleManager: Shutting down and abandoning module Toolbox (144)
+[2016.12.21-23.46.44:821][243]LogModuleManager: Shutting down and abandoning module ModuleUI (143)
+[2016.12.21-23.46.44:821][243]LogModuleManager: Shutting down and abandoning module MovieSceneTools (142)
+[2016.12.21-23.46.44:821][243]LogModuleManager: Shutting down and abandoning module OutputLog (141)
+[2016.12.21-23.46.44:821][243]LogModuleManager: Shutting down and abandoning module GammaUI (140)
+[2016.12.21-23.46.44:821][243]LogModuleManager: Shutting down and abandoning module Documentation (139)
+[2016.12.21-23.46.44:821][243]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (138)
+[2016.12.21-23.46.44:821][243]LogModuleManager: Shutting down and abandoning module AnalyticsET (137)
+[2016.12.21-23.46.44:821][243]LogModuleManager: Shutting down and abandoning module Analytics (136)
+[2016.12.21-23.46.44:821][243]LogModuleManager: Shutting down and abandoning module PortalServices (135)
+[2016.12.21-23.46.44:821][243]LogModuleManager: Shutting down and abandoning module PortalRpc (134)
+[2016.12.21-23.46.44:821][243]LogModuleManager: Shutting down and abandoning module MessagingRpc (133)
+[2016.12.21-23.46.44:821][243]LogModuleManager: Shutting down and abandoning module GameplayDebugger (132)
+[2016.12.21-23.46.44:821][243]LogModuleManager: Shutting down and abandoning module AITestSuite (131)
+[2016.12.21-23.46.44:821][243]LogModuleManager: Shutting down and abandoning module AIModule (130)
+[2016.12.21-23.46.44:821][243]LogModuleManager: Shutting down and abandoning module ProfilerService (129)
+[2016.12.21-23.46.44:947][243]LogModuleManager: Shutting down and abandoning module TaskGraph (128)
+[2016.12.21-23.46.44:947][243]LogModuleManager: Shutting down and abandoning module SlateRemote (127)
+[2016.12.21-23.46.44:947][243]LogModuleManager: Shutting down and abandoning module SteamVRController (126)
+[2016.12.21-23.46.44:947][243]LogModuleManager: Shutting down and abandoning module SteamVR (125)
+[2016.12.21-23.46.44:947][243]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (124)
+[2016.12.21-23.46.44:947][243]LogModuleManager: Shutting down and abandoning module OculusLibrary (123)
+[2016.12.21-23.46.44:947][243]LogModuleManager: Shutting down and abandoning module OculusInput (122)
+[2016.12.21-23.46.44:947][243]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (121)
+[2016.12.21-23.46.44:947][243]LogModuleManager: Shutting down and abandoning module CableComponent (120)
+[2016.12.21-23.46.44:947][243]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (119)
+[2016.12.21-23.46.44:948][243]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (118)
+[2016.12.21-23.46.44:948][243]LogModuleManager: Shutting down and abandoning module HTML5Networking (117)
+[2016.12.21-23.46.44:948][243]LogModuleManager: Shutting down and abandoning module SuperSearch (116)
+[2016.12.21-23.46.44:948][243]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (115)
+[2016.12.21-23.46.44:948][243]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (114)
+[2016.12.21-23.46.44:948][243]LogModuleManager: Shutting down and abandoning module PluginBrowser (113)
+[2016.12.21-23.46.44:948][243]LogModuleManager: Shutting down and abandoning module EpicSurvey (112)
+[2016.12.21-23.46.44:948][243]LogModuleManager: Shutting down and abandoning module DesktopPlatform (111)
+[2016.12.21-23.46.44:948][243]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (110)
+[2016.12.21-23.46.44:948][243]LogModuleManager: Shutting down and abandoning module UObjectPlugin (109)
+[2016.12.21-23.46.44:948][243]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (108)
+[2016.12.21-23.46.44:948][243]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (107)
+[2016.12.21-23.46.44:948][243]LogModuleManager: Shutting down and abandoning module SourceControl (106)
+[2016.12.21-23.46.44:948][243]LogModuleManager: Shutting down and abandoning module GitSourceControl (105)
+[2016.12.21-23.46.44:948][243]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (104)
+[2016.12.21-23.46.44:948][243]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (103)
+[2016.12.21-23.46.44:948][243]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (102)
+[2016.12.21-23.46.44:948][243]LogModuleManager: Shutting down and abandoning module MeshPaint (101)
+[2016.12.21-23.46.44:948][243]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (100)
+[2016.12.21-23.46.44:948][243]LogModuleManager: Shutting down and abandoning module HotReload (99)
+[2016.12.21-23.46.44:948][243]LogModuleManager: Shutting down and abandoning module MainFrame (98)
+[2016.12.21-23.46.44:948][243]LogModuleManager: Shutting down and abandoning module LevelEditor (97)
+[2016.12.21-23.46.44:949][243]LogModuleManager: Shutting down and abandoning module ContentBrowser (96)
+[2016.12.21-23.46.44:950][243]LogModuleManager: Shutting down and abandoning module Paper2DEditor (95)
+[2016.12.21-23.46.44:950][243]LogModuleManager: Shutting down and abandoning module UdpMessaging (94)
+[2016.12.21-23.46.45:051][243]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (93)
+[2016.12.21-23.46.45:051][243]LogModuleManager: Shutting down and abandoning module Paper2D (92)
+[2016.12.21-23.46.45:051][243]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (91)
+[2016.12.21-23.46.45:051][243]LogModuleManager: Shutting down and abandoning module Media (90)
+[2016.12.21-23.46.45:051][243]LogModuleManager: Shutting down and abandoning module WmfMedia (89)
+[2016.12.21-23.46.45:051][243]LogModuleManager: Shutting down and abandoning module MediaAssets (88)
+[2016.12.21-23.46.45:051][243]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (87)
+[2016.12.21-23.46.45:051][243]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (86)
+[2016.12.21-23.46.45:051][243]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (85)
+[2016.12.21-23.46.45:051][243]LogModuleManager: Shutting down and abandoning module VREditor (84)
+[2016.12.21-23.46.45:051][243]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (83)
+[2016.12.21-23.46.45:051][243]LogModuleManager: Shutting down and abandoning module PropertyEditor (82)
+[2016.12.21-23.46.45:051][243]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (81)
+[2016.12.21-23.46.45:051][243]LogModuleManager: Shutting down and abandoning module FunctionalTesting (80)
+[2016.12.21-23.46.45:051][243]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (79)
+[2016.12.21-23.46.45:051][243]LogModuleManager: Shutting down and abandoning module Sequencer (78)
+[2016.12.21-23.46.45:051][243]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (77)
+[2016.12.21-23.46.45:051][243]LogModuleManager: Shutting down and abandoning module MessageLog (76)
+[2016.12.21-23.46.45:051][243]LogModuleManager: Shutting down and abandoning module AssetTools (75)
+[2016.12.21-23.46.45:051][243]LogModuleManager: Shutting down and abandoning module UMGEditor (74)
+[2016.12.21-23.46.45:051][243]LogModuleManager: Shutting down and abandoning module UMG (73)
+[2016.12.21-23.46.45:051][243]LogModuleManager: Shutting down and abandoning module SlateReflector (72)
+[2016.12.21-23.46.45:051][243]LogModuleManager: Shutting down and abandoning module Slate (71)
+[2016.12.21-23.46.45:051][243]LogModuleManager: Shutting down and abandoning module EditorStyle (70)
+[2016.12.21-23.46.45:053][243]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (69)
+[2016.12.21-23.46.45:053][243]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (68)
+[2016.12.21-23.46.45:054][243]LogModuleManager: Shutting down and abandoning module XAudio2 (67)
+[2016.12.21-23.46.45:054][243]LogModuleManager: Shutting down and abandoning module Networking (65)
+[2016.12.21-23.46.45:054][243]LogModuleManager: Shutting down and abandoning module Core (64)
+[2016.12.21-23.46.45:054][243]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (63)
+[2016.12.21-23.46.45:054][243]LogModuleManager: Shutting down and abandoning module AssetRegistry (62)
+[2016.12.21-23.46.45:252][243]LogModuleManager: Shutting down and abandoning module KismetCompiler (61)
+[2016.12.21-23.46.45:252][243]LogModuleManager: Shutting down and abandoning module PhysXFormats (60)
+[2016.12.21-23.46.45:252][243]LogModuleManager: Shutting down and abandoning module MeshUtilities (59)
+[2016.12.21-23.46.45:252][243]LogModuleManager: Shutting down and abandoning module DerivedDataCache (58)
+[2016.12.21-23.46.45:295][243]LogDerivedDataCache: Shutdown
+[2016.12.21-23.46.45:295][243]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (57)
+[2016.12.21-23.46.45:295][243]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (56)
+[2016.12.21-23.46.45:295][243]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (55)
+[2016.12.21-23.46.45:295][243]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (54)
+[2016.12.21-23.46.45:295][243]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (53)
+[2016.12.21-23.46.45:295][243]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (52)
+[2016.12.21-23.46.45:295][243]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (51)
+[2016.12.21-23.46.45:295][243]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (50)
+[2016.12.21-23.46.45:295][243]LogModuleManager: Shutting down and abandoning module ImageWrapper (49)
+[2016.12.21-23.46.45:295][243]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (48)
+[2016.12.21-23.46.45:295][243]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (47)
+[2016.12.21-23.46.45:295][243]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (46)
+[2016.12.21-23.46.45:295][243]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (45)
+[2016.12.21-23.46.45:295][243]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (44)
+[2016.12.21-23.46.45:295][243]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (43)
+[2016.12.21-23.46.45:295][243]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (42)
+[2016.12.21-23.46.45:295][243]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (41)
+[2016.12.21-23.46.45:295][243]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (40)
+[2016.12.21-23.46.45:295][243]LogModuleManager: Shutting down and abandoning module Messaging (39)
+[2016.12.21-23.46.45:295][243]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (38)
+[2016.12.21-23.46.45:295][243]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (37)
+[2016.12.21-23.46.45:295][243]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (36)
+[2016.12.21-23.46.45:295][243]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (35)
+[2016.12.21-23.46.45:295][243]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (34)
+[2016.12.21-23.46.45:295][243]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (33)
+[2016.12.21-23.46.45:295][243]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (32)
+[2016.12.21-23.46.45:295][243]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (31)
+[2016.12.21-23.46.45:295][243]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (30)
+[2016.12.21-23.46.45:295][243]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (29)
+[2016.12.21-23.46.45:295][243]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (28)
+[2016.12.21-23.46.45:295][243]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (27)
+[2016.12.21-23.46.45:295][243]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (26)
+[2016.12.21-23.46.45:295][243]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (25)
+[2016.12.21-23.46.45:295][243]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (24)
+[2016.12.21-23.46.45:295][243]LogModuleManager: Shutting down and abandoning module TargetPlatform (23)
+[2016.12.21-23.46.45:295][243]LogModuleManager: Shutting down and abandoning module InputCore (22)
+[2016.12.21-23.46.45:295][243]LogModuleManager: Shutting down and abandoning module Settings (21)
+[2016.12.21-23.46.45:295][243]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
+[2016.12.21-23.46.45:295][243]LogModuleManager: Shutting down and abandoning module HTTP (18)
+[2016.12.21-23.46.46:797][243]LogModuleManager: Shutting down and abandoning module XMPP (17)
+[2016.12.21-23.46.46:797][243]LogModuleManager: Shutting down and abandoning module OculusRift (16)
+[2016.12.21-23.46.46:797][243]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
+[2016.12.21-23.46.46:797][243]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2016.12.21-23.46.46:797][243]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2016.12.21-23.46.46:797][243]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2016.12.21-23.46.46:797][243]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2016.12.21-23.46.46:804][243]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2016.12.21-23.46.46:804][243]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2016.12.21-23.46.46:805][243]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2016.12.21-23.46.46:805][243]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2016.12.21-23.46.46:805][243]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2016.12.21-23.46.46:805][243]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2016.12.21-23.46.46:805][243]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2016.12.21-23.46.46:805][243]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2016.12.21-23.46.46:805][243]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2016.12.21-23.46.46:805][243]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2016.12.21-23.46.46:806][243]LogExit: Exiting.
+[2016.12.21-23.46.46:819][243]Log file closed, 12/21/16 18:46:46
