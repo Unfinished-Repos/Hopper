@@ -1,0 +1,96 @@
+﻿Log file open, 12/21/16 18:32:33
+LogInit:Display: Running engine for game: Hopper
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(46531736) SRandInit(46531738).
+LogTaskGraph: Started task graph with 4 named threads and 7 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.073773
+LogInit: Version: 4.12.5-3039270+++UE4+Release-4.12
+LogInit: API Version: 2992821
+LogInit: Net Version: 3039270
+LogDevObjectVersion: Number of dev versions registered: 13
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 3
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 1
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 2
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 6
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 2
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 0
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogInit: Compiled (64-bit): Jul  6 2016 09:09:46
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.12
+LogInit: Command line:  /Temp/Autosaves/Game/2DSideScrollerBP/Maps/UEDPC2DSideScrollerExampleMap -game -PIEVIACONSOLE -ResX=1280 -ResY=720  -Multiprocess -windowed -messaging -SessionName="Play in Standalone Game" -featureleveles2 -faketouches 
+LogInit: Base directory: C:/Program Files (x86)/Epic Games/4.12/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Using libcurl 7.41.0
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with WinSSL
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2016.12.21-23.32.33:824][  0]LogInit: Selected Device Profile: [Windows]
+[2016.12.21-23.32.33:824][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.12.21-23.32.33:828][  0]LogInit: Computer: ANDREW
+[2016.12.21-23.32.33:828][  0]LogInit: User: mrchargerlover
+[2016.12.21-23.32.33:828][  0]LogInit: CPU Page size=65536, Cores=4
+[2016.12.21-23.32.33:828][  0]LogInit: High frequency timer resolution =3.323584 MHz
+[2016.12.21-23.32.33:828][  0]LogMemory: Memory total: Physical=32.0GB (32GB approx)
+[2016.12.21-23.32.33:828][  0]LogMemory: Platform Memory Stats for Windows
+[2016.12.21-23.32.33:828][  0]LogMemory: Process Physical Memory: 189.17 MB used, 189.17 MB peak
+[2016.12.21-23.32.33:828][  0]LogMemory: Process Virtual Memory: 195.20 MB used, 195.20 MB peak
+[2016.12.21-23.32.33:828][  0]LogMemory: Physical Memory: 11027.38 MB used, 32726.30 MB total
+[2016.12.21-23.32.33:828][  0]LogMemory: Virtual Memory: 552.97 MB used, 134217728.00 MB total
+[2016.12.21-23.32.33:856][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2016.12.21-23.32.34:226][  0]LogD3D11RHI: D3D11 adapters:
+[2016.12.21-23.32.34:251][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 660' (Feature Level 11_0)
+[2016.12.21-23.32.34:251][  0]LogD3D11RHI:       2016/0/16363 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:3, VendorId:0x10de
+[2016.12.21-23.32.34:253][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2016.12.21-23.32.34:253][  0]LogD3D11RHI:       0/0/16363 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2016.12.21-23.32.34:253][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2016.12.21-23.32.34:257][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2016.12.21-23.32.34:257][  0]LogD3D11RHI:     GPU DeviceId: 0x11c0 (for the marketing name, search the web for "GPU Device Id")
+[2016.12.21-23.32.34:257][  0]LogWindows: EnumDisplayDevices:
+[2016.12.21-23.32.34:257][  0]LogWindows:    0. 'NVIDIA GeForce GTX 660' (P:1 D:1)
+[2016.12.21-23.32.34:257][  0]LogWindows:    1. 'NVIDIA GeForce GTX 660' (P:0 D:1)
+[2016.12.21-23.32.34:258][  0]LogWindows:    2. 'NVIDIA GeForce GTX 660' (P:0 D:1)
+[2016.12.21-23.32.34:258][  0]LogWindows:    3. 'NVIDIA GeForce GTX 660' (P:0 D:0)
+[2016.12.21-23.32.34:258][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2016.12.21-23.32.34:258][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 660
+[2016.12.21-23.32.34:258][  0]LogD3D11RHI:   Driver Version: 369.09 (internal:21.21.13.6909, unified:369.09)
+[2016.12.21-23.32.34:258][  0]LogD3D11RHI:      Driver Date: 8-1-2016
+[2016.12.21-23.32.34:258][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.12.21-23.32.34:273][  0]LogD3D11RHI: Async texture creation enabled
+[2016.12.21-23.32.34:283][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2016.12.21-23.32.34:283][  0]LogShaderCompilers: Guid format shader working directory is -22 characters bigger than the processId version (../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopper/Intermediate/Shaders/WorkingDirectory/3260/).
+[2016.12.21-23.32.34:283][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/MRCHAR~1/AppData/Local/Temp/UnrealShaderWorkingDir/0676613A4A8CD9C8B2A965B9A255AC2F/'.
+[2016.12.21-23.32.34:283][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.12.21-23.32.35:082][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.12.21-23.32.35:091][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.12.21-23.32.35:100][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.12.21-23.32.35:110][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.12.21-23.32.35:110][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.12.21-23.32.35:170][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.12.21-23.32.35:217][  0]LogDerivedDataCache: Loaded boot cache 0.05s 48MB C:/Users/mrchargerlover/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2016.12.21-23.32.35:218][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/mrchargerlover/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc
+[2016.12.21-23.32.35:218][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopper/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.12.21-23.32.35:218][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.12.21-23.32.35:218][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/mrchargerlover/Documents/Unreal Projects/Hopper/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.12.21-23.32.35:218][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.12.21-23.32.35:234][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.12.21-23.32.35:246][  0]LogDerivedDataCache: Us
